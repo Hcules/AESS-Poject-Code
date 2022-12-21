@@ -141,8 +141,8 @@ void loop()
   if ( cnt2!=0)
   {
    servo.attach(servoPin);
-   float hum = 82;//dht. readHumidity();
-   float tempc = 23;//dht. readTemperature();
+   float hum = dht. readHumidity();
+   float tempc = dht. readTemperature();
    static int i=0;
 
    if(isnan(hum)||isnan(tempc))
